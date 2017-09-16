@@ -1,0 +1,21 @@
+[alias]
+	st = status
+	co = checkout
+	pl = pull
+	br = branch
+	ci = commit
+	df = diff
+	ph = push
+[push]
+	default = simple
+[user]
+	email = 908661594@qq.com
+	name = jialiping
+[core]
+	excludesfile = /Users/heart/.gitignore_global
+[difftool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/araxiscompare-w.sh -2 \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/araxisgitmerge-w.sh \"$REMOTE\" \"$BASE\" \"$LOCAL\" \"$MERGED\"
+	trustExitCode = true
